@@ -1,0 +1,58 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Sean Lange</title>
+    <link href="/client/index/style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet"> 
+</head>
+<body>
+    <nav class="navigation" id="nav">
+        <button id="homebutton">Home</button>
+        <button id="projectbutton" onclick="location.href='projects'">Projects</button>
+        <button id="contactbutton" onclick="location.href='contact'">Contact</button>
+    </nav>
+    <div class="top">
+        <div class="starterContainer">
+            <h1 id="name">Sean Lange</h1>
+            <p id="saying">I enjoy programming in Rust for systems and web assembly, and Node.js for server-side applications.</p>
+            <div class="buttonline">
+                <button onclick="window.location='projects'">Projects</button>
+                <button onclick="window.location='https://tinyurl.com/seanlange'">Resume</button>
+                <button onclick="window.location='contact'">Contact</button>
+            </div>
+        </div>
+        <div class="links">
+            <% for(let name in projects.links) { let link = projects.links[name] %>
+                <img src="/images/<%= link.image %>" onclick="window.location='<%= link.link %>'" alt=<%= name %> />
+            <% } %>
+        </div>
+    </div>
+    <div class="content" id="content">
+        <div id="divbreakgrad"></div>
+        <div id="whitediagonal"></div>
+
+        <div class="aboutme">
+            <p>I am a sophomore at Largo High School in Largo, Florida, and have been programming for 4 years. I originally started programming in the summer before 6th grade when I wanted to create a Pi calculator in Python. This project was very simple, however in finishing it, I felt a feeling of joy that propelled me to improve and learn about coding and its applications.<br><br>In the past, I have made games using the HTML canvas, and since the end of d2019, have been focused on building web applications using Node.js as a backend. I am adept at Javascript, using Node to create servers for over 2 years, and proficient in Rust, using it for systems programming and web assembly.</p>
+        </div>
+
+        <div class="projects">
+            <h2 class="title">Projects</h2>
+            <div class="indivprojects">
+                <% for(let name of projects.highlights) { let project = projects.projects[name] %>
+                    <div class="project" onclick="window.open('<%= project.link %>'), '_blank'">
+                        <img src="/images/<%= project.image %>" class="projectimage" draggable="false">
+                        <h2 class="ptitle"><%= name %></h2>
+                        <p class="pwords"><%= project.description %></p>
+                    </div>
+                <% } %>
+            </div>
+            <div class="allprojects">
+                <button onclick="location.href='projects'">More Projects</button>
+            </div>
+        </div>
+    </div>
+    <script src="/client/index/script.js"></script>
+</body>
