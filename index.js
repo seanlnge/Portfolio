@@ -34,6 +34,6 @@ app.post('/contact', (req, res) => {
 
 app.get('*', (req, res) => {
     res.render('404.ejs');
-})
+});
 
 app.listen(3000, _ => console.log('Started'));
