@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "node input"
+    "start": "node index"
   },
   "keywords": [],
   "author": "",
