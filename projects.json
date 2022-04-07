@@ -41,11 +41,11 @@
             "image": "renderspice.png",
             "code": "https://replit.com/@Renderspice/Renderspice/2d/v010/v010.js"
         },
-        "Fncache": {
-            "description": "A node package manager for small functions made for a 2 day code jam.",
-            "link": "https://code-jam-10.seanlnge.repl.co",
-            "image": "fncache.png",
-            "code": "https://replit.com/@seanlnge/Code-Jam-10"
+        "Polyellipse": {
+            "description": "Visualization of a polyellipse, approximated using the Newton-Raphson method",
+            "link": "https://htmlpreview.github.io/?https://github.com/seanlnge/polyfocal-ellipse/blob/main/index.html",
+            "image": "polyellipse.png",
+            "code": "https://github.com/seanlnge/polyfocal-ellipse"
         }
     }
 }
