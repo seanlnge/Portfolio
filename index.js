@@ -36,4 +36,4 @@ app.get('*', (req, res) => {
     res.render('404.ejs');
 });
 
-app.listen(3000, _ => console.log('Started'));
+app.listen(process.env.PORT || 3000, _ => console.log('Started'));
