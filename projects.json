@@ -17,6 +17,12 @@
             "image": "codeplates.png",
             "code": "https://replit.com/@seanlnge/Codeplates"
         },
+        "Polyellipse": {
+            "description": "Visualization of a polyellipse, approximated using the Newton-Raphson method",
+            "link": "https://htmlpreview.github.io/?https://github.com/seanlnge/polyfocal-ellipse/blob/main/index.html",
+            "image": "polyellipse.png",
+            "code": "https://github.com/seanlnge/polyfocal-ellipse"
+        },
         "Roe Bros Pizza": {
             "description": "Single page website that I made for a local pizza company operating in my area.",
             "link": "https://roe-bros-pizza.seanlnge.repl.co",
@@ -40,12 +46,6 @@
             "link": "https://docs.renderspice.repl.co",
             "image": "renderspice.png",
             "code": "https://replit.com/@Renderspice/Renderspice/2d/v010/v010.js"
-        },
-        "Polyellipse": {
-            "description": "Visualization of a polyellipse, approximated using the Newton-Raphson method",
-            "link": "https://htmlpreview.github.io/?https://github.com/seanlnge/polyfocal-ellipse/blob/main/index.html",
-            "image": "polyellipse.png",
-            "code": "https://github.com/seanlnge/polyfocal-ellipse"
         }
     }
 }
